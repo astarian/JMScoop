@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { INeedARide } from '../pages/i-need-a-ride/i-need-a-ride';
+import { Needride } from '../pages/needride/needride';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    INeedARide
+    Needride
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +17,7 @@ import { INeedARide } from '../pages/i-need-a-ride/i-need-a-ride';
   entryComponents: [
     MyApp,
     HomePage,
-    INeedARide
+    Needride
   ],
   providers: []
 })

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-
-import {Page, NavController} from 'ionic-angular';
-import { INeedARide } from '../pages/i-need-a-ride/i-need-a-ride';
+import { NavController } from 'ionic-angular';
+import { Needride } from '../needride/needride';
 
 @Component({
   selector: 'page-home',
@@ -9,11 +8,9 @@ import { INeedARide } from '../pages/i-need-a-ride/i-need-a-ride';
 })
 export class HomePage {
 
-	constructor(nav: NavController){
-			this.nav = nav;
-		}
-	goToINeedARide(){
-		this.nav.push(INeedARide);
+	constructor(public navCtrl: NavController){
 	}
+
+	navigate(){ this.navCtrl.push(Needride); }
 
 }

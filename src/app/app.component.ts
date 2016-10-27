@@ -4,7 +4,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 
 import { HomePage } from '../pages/home/home';
-import { INeedARide } from '../pages/i-need-a-ride/i-need-a-ride';
+
 
 @Component({
   template: `<ion-nav [root]="rootPage"></ion-nav>`
