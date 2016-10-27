@@ -8,10 +8,20 @@
 
 <ion-content padding>
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-    <img src="http://3.bp.blogspot.com/-PgWAROSzysE/VHGhDIgyrLI/AAAAAAAADVc/_pf22BD2W-M/s1600/tripda-icon-1-640x640.png">
+    <img src="http://sites.jmu.edu/3SPACE/files/2013/08/JMU_letter_mark_CMYK-1.jpg">
+    <ion-card>
+      <ion-card-header>
+        Profile Info Goes Here
+      </ion-card-header>
+    </ion-card>
   </p>
-  <button ion-button (click)="navigate()" color="light">
+  <button ion-button (click)="needride()" color="light" class="button-inner">
       I Need a Ride!
-    </button>
+  </button>
+  <button ion-button (click)="driving()" color="light" class="button-inner">
+      I'm Driving!
+  </button>
+  <button ion-button (click)="mycarpools()" color="light" class="button-inner">
+      My Carpools
+  </button>
 </ion-content>

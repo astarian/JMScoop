@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Needride } from '../needride/needride';
+import { Driving } from '../driving/driving';
+import { Mycarpools } from '../mycarpools/mycarpools';
 
 @Component({
   selector: 'page-home',
@@ -11,6 +13,10 @@ export class HomePage {
 	constructor(public navCtrl: NavController){
 	}
 
-	navigate(){ this.navCtrl.push(Needride); }
+	needride(){ this.navCtrl.push(Needride); }
+
+	driving() { this.navCtrl.push(Driving); }
+
+	mycarpools(){ this.navCtrl.push(Mycarpools); }
 
 }
