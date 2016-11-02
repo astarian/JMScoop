@@ -11,7 +11,8 @@
     "deploy:before": "build",
     "build:before": "build",
     "run:before": "build",
-    "test": "ng test"
+    "test": "ng test",
+    "e2e": "protractor"
   },
   "dependencies": {
     "@angular/common": "2.0.0",
@@ -44,6 +45,8 @@
     "karma-jasmine": "^1.0.2",
     "karma-mocha-reporter": "^2.2.0",
     "karma-remap-istanbul": "^0.2.1",
+    "protractor": "^4.0.10",
+    "protractor-jasmine2-screenshot-reporter": "^0.3.2",
     "typescript": "^2.0.3"
   },
   "cordovaPlugins": [
