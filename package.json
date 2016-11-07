@@ -11,7 +11,10 @@
     "deploy:before": "build",
     "build:before": "build",
     "run:before": "build",
-    "test": "ng test"
+    "test": "ng test",
+    "postinstall": "ionic state restore && webdriver-manager update",
+    "e2e": "protractor",
+    "start": "ionic serve"
   },
   "dependencies": {
     "@angular/common": "2.0.0",
@@ -44,6 +47,11 @@
     "karma-jasmine": "^1.0.2",
     "karma-mocha-reporter": "^2.2.0",
     "karma-remap-istanbul": "^0.2.1",
+    "protractor": "^4.0.10",
+    "protractor-jasmine2-screenshot-reporter": "^0.3.2",
+    "ts-node": "^1.6.1",
+    "tslint": "^3.15.1",
+    "tslint-eslint-rules": "^2.1.0",
     "typescript": "^2.0.3"
   },
   "cordovaPlugins": [
