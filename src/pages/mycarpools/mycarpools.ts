@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
+
 
 /*
   Generated class for the Mycarpools page.
@@ -13,10 +15,31 @@ import { NavController } from 'ionic-angular';
 })
 export class Mycarpools {
 
-  constructor(public navCtrl: NavController) {}
+	testCheckboxOpen: boolean;
+  testCheckboxResult;
 
-  ionViewDidLoad() {
-    console.log('Hello Mycarpools Page');
+  constructor(public alertCtrl: AlertController) { }
+
+  showConfirm() {
+    let confirm = this.alertCtrl.create({
+      title: 'James Madison has requested to join your carpool',
+      message: 'Click accept to add rider to your carpool, or deny.',
+      buttons: [
+        {
+          text: 'Deny',
+          handler: () => {
+            console.log('Disagree clicked');
+          }
+        },
+        {
+          text: 'Accept',
+          handler: () => {
+            console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    confirm.present();
   }
 
 }

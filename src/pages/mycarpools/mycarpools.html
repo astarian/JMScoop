@@ -7,12 +7,48 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>mycarpools</ion-title>
+    <ion-title>My Carpools</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+<ion-list>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbffF8LPkRPT6LlMqpCv1aLU_VCRe5rpAxfeC5dlgfGymqGHDk">
+      </ion-thumbnail>
+      <h2>Matt's Ride</h2>
+      <p>Sunchase to East Campus</p>
+      <p>11/5/2016, 10:30 AM</p>
+      <button ion-button clear item-right>View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="https://d38zhw9ti31loc.cloudfront.net/wp-content/uploads/2013/07/Crystal-headshot-new.jpg">
+      </ion-thumbnail>
+      <h2>Your Ride</h2>
+      <p>Lakeside to South View</p>
+      <p>11/1/2016, 5:00 PM</p>
+      <p><button ion-button small color="secondary" (click)="showConfirm()">New Rider Request!</button></p>
+
+      <button ion-button clear item-right>View</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="https://laymanstermsmediadotcom.files.wordpress.com/2013/11/headshot-nov-2613web.jpg">
+      </ion-thumbnail>
+      <h2>Erica's Ride</h2>
+      <p>Downtown to Main Campus</p>
+      <p>10/28/2016, 7:30 AM</p>
+      <button ion-button clear item-right>View</button>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>
