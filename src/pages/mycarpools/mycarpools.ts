@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
-
 /*
   Generated class for the Mycarpools page.
 
@@ -11,12 +10,13 @@ import { AlertController } from 'ionic-angular';
 */
 @Component({
   selector: 'page-mycarpools',
-  templateUrl: 'mycarpools.html'
+  templateUrl: 'mycarpools.html',
+  providers: [AlertController]
 })
 export class Mycarpools {
 
 	testCheckboxOpen: boolean;
-  testCheckboxResult;
+  testCheckboxResult: boolean;
 
   constructor(public alertCtrl: AlertController) { }
 

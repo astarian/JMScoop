@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component     } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Needride } from '../needride/needride';
-import { Driving } from '../driving/driving';
-import { Mycarpools } from '../mycarpools/mycarpools';
+import { Needride      } from '../needride/needride';
+import { Driving       } from '../driving/driving';
+import { Mycarpools    } from '../mycarpools/mycarpools';
 
 @Component({
   selector: 'page-home',

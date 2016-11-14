@@ -1,10 +1,7 @@
-import { inject } from '@angular/core/testing';
-import { ComponentFixture, async } from '@angular/core/testing';
-import { TestUtils }               from '../test';
-import { HomePage }          from '../pages/home/home';
-import { By }           from '@angular/platform-browser';
-import { MyApp }                      from './app.component';
-import { MenuMock, NavMock, PlatformMock } from '../mocks';
+import { ComponentFixture, async, inject } from '@angular/core/testing';
+import { TestUtils }                       from '../test';
+import { HomePage }                        from '../pages/home/home';
+import { By }                              from '@angular/platform-browser';
 
 let fixture: ComponentFixture<HomePage> = null;
 let instance: any = null;
